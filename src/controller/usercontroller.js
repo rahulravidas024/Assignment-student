@@ -20,7 +20,6 @@ const registration = async function (req, res) {
 
         data.password = await bcrypt.hash(password, 10)
 
-
         let savedata = await usermodel.create(data)
         return res.status(200).send({ data: savedata })
 

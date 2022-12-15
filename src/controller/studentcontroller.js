@@ -1,6 +1,4 @@
 const studentmodel = require("../model/studentmodel")
-const usermodel = require("../model/usermodel")
-
 const mongoose = require('mongoose')
 const Objectid = mongoose.Types.ObjectId.isValid
 

@@ -27,7 +27,7 @@ const authorization = async function (req, res, next) {
     try {
         let userid = req.params.userid
         if (!Objectid(userid)) {
-            return res.status(400).send({ status: false, message: " PLEASE ENTER CORRECT mongoose USER ID" })
+            return res.status(400).send({ status: false, message: " PLEASE ENTER CORRECT MONGOOSE USER ID" })
         }
 
         const findUseridInDb = await usermodel.findById(userid)

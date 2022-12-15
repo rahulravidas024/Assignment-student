@@ -5,7 +5,7 @@ const app = express();
 mongoose.set('strictQuery', false);
 
 app.use(express.json());
-mongoose.connect("mongodb+srv://jay420:gRLzeLdOa6ENyasF@cluster0.dnkg3q6.mongodb.net/assignment", {
+mongoose.connect("mongodb+srv://rahulravidas024:2iYJiS3c54qnkGXA@cluster0.emr6keu.mongodb.net/assignment", {
     useNewUrlParser: true
 })
 .then( () => console.log("MongoDb is connected"))
